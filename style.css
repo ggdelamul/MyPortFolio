@@ -5,8 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-} /*reset css*/
-
+}
+/*reset css*/
 html {
   font-size: 100%;
 }
@@ -31,4 +31,49 @@ body {
 }
 .navbar a {
   padding: 3rem;
+}
+/*style menu mobile*/
+.navbar-mobile i {
+  position: fixed;
+  top: 9px;
+  right: 15px;
+  font-size: 3rem;
+  color: red; /*temporaire*/
+  z-index: 9999;
+}
+.navbar-mobile .modal {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+}
+.navbar-mobile .navbar-mobile-list {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-mobile .navbar-mobile-list a {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  padding: 2rem;
+}
+.navbar-mobile {
+  display: none;
+}
+/*mediaqueries*/
+@media screen and (max-width: 700px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
 }
