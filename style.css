@@ -23,3 +23,12 @@ body {
   align-items: center;
   background-color: #1e2337;
 }
+/*style menu desktop*/
+.navbar-desktop {
+  height: 8rem;
+  line-height: 8rem;
+  text-align: center;
+}
+.navbar a {
+  padding: 3rem;
+}
