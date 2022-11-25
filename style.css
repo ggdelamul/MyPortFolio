@@ -8,11 +8,11 @@
 }
 /*reset css*/
 html {
-  font-size: 100%;
+  font-size: 62.5%; /* 1rem = 10px*/
 }
 body {
-  font-size: 1.4rem;
-  font-family: arial;
+  font-size: 1.4rem; /* soit 14px*/
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 .container {
@@ -23,25 +23,35 @@ body {
   align-items: center;
   background-color: #1e2337;
 }
-/*style menu desktop*/
-.navbar-desktop {
-  height: 8rem;
-  line-height: 8rem;
-  text-align: center;
+
+.banniere-titre {
+  margin-bottom: 1rem;
 }
-.navbar a {
+/*STYLE MENU DESKTOP*/
+.navbar-desktop {
+  height: 8rem; /*80pixels*/
+  line-height: 8rem; /*centre verticalement*/
+  text-align: center; /*centre horizontalement*/
+}
+/* style des liens*/
+.navbar-desktop a {
   padding: 3rem;
 }
-/*style menu mobile*/
+/*STYLE MENU MOBILE*/
+.navbar-mobile {
+  display: none;
+}
+
 .navbar-mobile i {
   position: fixed;
+  z-index: 9999;
   top: 9px;
   right: 15px;
   font-size: 3rem;
-  color: red; /*temporaire*/
-  z-index: 9999;
+  color: white;
 }
-.navbar-mobile .modal {
+.modal {
+  transition: top 0.9s;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -51,7 +61,9 @@ body {
   top: -100vh;
   left: 0;
   width: 100%;
+  opacity: 0.9;
 }
+
 .navbar-mobile .navbar-mobile-list {
   display: flex;
   height: 100vh;
@@ -62,13 +74,13 @@ body {
 .navbar-mobile .navbar-mobile-list a {
   font-size: 2rem;
   font-weight: 800;
-  color: white;
+  color: #1e2337;
   padding: 2rem;
 }
-.navbar-mobile {
-  display: none;
+.change-modal {
+  top: 0;
 }
-/*mediaqueries*/
+/*Media queries*/
 @media screen and (max-width: 700px) {
   .navbar-desktop {
     display: none;
