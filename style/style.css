@@ -1,3 +1,4 @@
+/*reset css*/
 *,
 ::before,
 ::after {
@@ -6,25 +7,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-/*reset css*/
-html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.4rem;
-  font-family: "Quicksand", sans-serif;
-  color: white;
-}
 .container {
+  background-image: url("../img/background-blue.jpg");
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1e2337;
-}
-.banniere-titre {
-  margin-bottom: 1rem;
 }
 /*STYLE MENU DESKTOP*/
 .navbar-desktop {
