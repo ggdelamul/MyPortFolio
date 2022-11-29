@@ -1,3 +1,68 @@
+/*----------------------Font-------------------------------*/
+@font-face {
+  font-family: 'pacificoregular';
+  src: url('../font/Pacifico_web/pacifico-regular-webfont.woff2') format('woff2'),
+       url('../font/Pacifico_web/pacifico-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'merriweatheritalic';
+  src: url('../font/Merriweather_web/merriweather-italic-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherlight';
+  src: url('../font/merriweather-light-webfont.woff2') format('woff2'),
+       url('../font/merriweather-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherlight_italic';
+  src: url('../font/Merriweather_web/merriweather-lightitalic-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherregular';
+  src: url('../font/Merriweather_web/merriweather-regular-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'merriweatherblack';
+  src: url('../font/Merriweather_web/merriweather-black-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherblack_italic';
+  src: url('../font/Merriweather_web/merriweather-blackitalic-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-blackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherbold';
+  src: url('../font/Merriweather_web/merriweather-bold-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'merriweatherbold_italic';
+  src: url('../font/Merriweather_web/merriweather-bolditalic-webfont.woff2') format('woff2'),
+       url('../font/Merriweather_web/merriweather-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*---------------------reset css--------------------------*/
 *,
 ::before,
@@ -24,6 +89,7 @@
   color: white;
   position: relative;
   text-decoration: none;
+  font-family:"merriweatherbold";
 }
 .navbar-desktop a::after {
   content: "";
