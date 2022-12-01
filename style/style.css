@@ -154,10 +154,10 @@
   justify-content: center;
 }
 .navbar-mobile .navbar-mobile-list a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   text-decoration: none;
   font-family: "merriweatherbold";
