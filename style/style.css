@@ -92,6 +92,9 @@
 /*---------------------Root------------------------------*/
 :root {
   --titleSize: 2rem;
+  --titleCard: 1.5rem;
+  --mainColor: hsla(197, 98%, 22%, 1);
+  --darkenColor: hsla(197, 98%, 12%, 1);
 }
 /*---------------------STYLE MENU DESKTOP----------------*/
 .navbar-desktop {
@@ -249,10 +252,22 @@
 .title-section {
   display: flex;
   justify-content: center;
+  padding: 15px 0px;
+  width: 100%;
 }
 .title-section h2 {
   color: hsla(197, 98%, 22%, 1);
   font-size: var(--titleSize);
+}
+.card-show {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: row;
+}
+.card-container {
+  margin: 15px 0;
+  border: solid 2px var(--darkenColor);
+  border-radius: 15px;
 }
 .card-project {
   width: 300px;
@@ -263,6 +278,63 @@
 .project-picture img {
   width: 100%;
   height: 100%;
+  border-radius: 14px;
+}
+.card-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body > h3 {
+  font-size: var(--titleCard);
+  font-family: "merriweatherbold";
+  padding: 15px 0px;
+  color: var(--mainColor);
+}
+.project-description {
+  text-align: justify;
+  padding: 15px 0px;
+}
+.project-description p {
+  padding: 10px;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vignette {
+  background-color: var(--darkenColor);
+  margin: 10px 10px;
+  padding: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+.vignette p {
+  color: #f2f2f2;
+}
+.more {
+  margin: 15px 0px;
+}
+.more a {
+  color: var(--darkenColor);
+  transition: 0.4s;
+}
+.more a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--darkenColor);
+  display: inline-block;
+  transform-origin: 100% 0;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+.more a:hover::after {
+  transform-origin: 0 0;
+  transform: scale(1);
 }
 /*---------------------------MEDIAQUERIES-------------------*/
 @media screen and (max-width: 768px) {
@@ -287,5 +359,13 @@
   .picture {
     width: 200px;
     height: 200px;
+  }
+  #front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-show {
+    flex-direction: column;
   }
 }
