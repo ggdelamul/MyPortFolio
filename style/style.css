@@ -255,9 +255,10 @@
   padding: 15px 0px;
   width: 100%;
 }
-.title-section h2 {
+.front-title {
   color: hsla(197, 98%, 22%, 1);
   font-size: var(--titleSize);
+  font-family: "merriweatherbold";
 }
 .card-show {
   display: flex;
@@ -335,6 +336,15 @@
 .more a:hover::after {
   transform-origin: 0 0;
   transform: scale(1);
+}
+/*---------------------------Back-----------------*/
+#back {
+  padding: 20px 0px;
+}
+.back-title {
+  color: white;
+  font-size: var(--titleSize);
+  font-family: "merriweatherbold";
 }
 /*---------------------------MEDIAQUERIES-------------------*/
 @media screen and (max-width: 768px) {
