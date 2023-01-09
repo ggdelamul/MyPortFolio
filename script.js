@@ -29,6 +29,6 @@ function displayModal(index) {
 for (i = 0; i < knowMore.length; i++) {
   listenClickLink(i);
   closeCross[i].addEventListener("click", function () {
-    console.log("croix cliqué");
+    console.log("croix cliqué", closeCross[i]);
   });
 }
